@@ -66,12 +66,9 @@ function CommunityFeed() {
           }}
         >
           <option value="All">All</option>
-
           <option value="Women's Fashion">Women's Fashion</option>
-
           <option value="Luxury Watches">Luxury Watches</option>
-
-          <option value="Antique Furniture">Antique Furniture</option>
+          <option value="Men's Fashion">Men's Fashion</option>{" "}
         </select>
       </div>
 

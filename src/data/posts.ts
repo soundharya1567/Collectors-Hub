@@ -1,6 +1,6 @@
 import saree from "../assets/images/saree.jpg";
 import rolex from "../assets/images/rolex.jpg";
-import chair from "../assets/images/chair.jpg";
+import shirt from "../assets/images/shirt.jpg";
 
 const posts = [
   {
@@ -26,9 +26,9 @@ const posts = [
   {
     id: 3,
     username: "Meera Joshi",
-    category: "Antique Furniture",
-    productImage: chair,
-    caption: "Found this antique wooden chair from 1950s 🪑",
+    category: "Men's Fashion",
+    productImage: shirt,
+    caption: "Found this classic vintage shirt for my collection 👕",
     likes: 35,
     comments: 6,
   },
