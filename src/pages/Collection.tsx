@@ -53,10 +53,12 @@ function Collection() {
     filteredItems.sort((a: any, b: any) => b.id - a.id);
   }
 
-  const categories = [
-    "All",
-    ...new Set(currentItems.map((item: any) => item.category).filter(Boolean)),
-  ];
+  const categories: string[] = Array.from(
+    new Set([
+      "All",
+      ...currentItems.map((item: any) => item.category).filter(Boolean),
+    ]),
+  );
 
   const changeTab = (tab: string) => {
     setActiveTab(tab);
@@ -157,7 +159,9 @@ function Collection() {
           }}
         >
           {categories.map((cat) => (
-            <option key={cat}>{cat}</option>
+            <option key={cat} value={cat}>
+              {cat}
+            </option>
           ))}
         </select>
 

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Collection from "./pages/Collection";
 import CommunityFeed from "./pages/CommunityFeed";
@@ -11,7 +11,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -36,7 +36,7 @@ function App() {
         {/* Wishlist */}
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
