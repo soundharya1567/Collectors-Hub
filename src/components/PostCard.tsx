@@ -50,7 +50,6 @@ function PostCard({ post }: PostProps) {
       }}
     >
       <h3>👤 {post.username}</h3>
-
       <img
         src={post.productImage}
         alt={post.caption}
@@ -58,7 +57,10 @@ function PostCard({ post }: PostProps) {
           width: "100%",
           height: "250px",
           objectFit: "contain",
+          objectPosition: "center",
           borderRadius: "10px",
+          display: "block",
+          margin: "0 auto",
         }}
       />
 
