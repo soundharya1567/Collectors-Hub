@@ -56,7 +56,7 @@ function PostCard({ post }: PostProps) {
         style={{
           width: "100%",
           height: "250px",
-          objectFit: "contain",
+          objectFit: "cover",
           objectPosition: "center",
           borderRadius: "10px",
           display: "block",
