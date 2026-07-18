@@ -10,6 +10,12 @@ import Wishlist from "./pages/Wishlist";
 import Navbar from "./components/Navbar";
 
 function App() {
+  if (
+    window.location.hash === "" &&
+    window.location.pathname === "/Collectors-Hub/"
+  ) {
+    window.location.replace("/Collectors-Hub/#/");
+  }
   return (
     <HashRouter>
       <Navbar />
